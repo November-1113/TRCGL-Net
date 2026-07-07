@@ -121,6 +121,5 @@ Single GPU training:
 ```bash
 CUDA_VISIBLE_DEVICES=0 nohup torchrun \
 --nproc_per_node=1 \
---rdzv_endpoint=localhost:29512 \
 CXR.py \
 > logs/cxr.log 2>&1 &
